@@ -142,3 +142,186 @@
 	float: right;
 }
 
+/* layout pages                      */
+/*************************************/
+.layout-top-nav .content-wrapper, .layout-top-nav .right-side, .layout-top-nav .main-footer {
+    margin-right: 0;
+}
+
+.layout-top-nav .main-header .navbar {
+    margin-right: 0;
+}
+
+@media (min-width: 768px){
+	.navbar-header {
+	    float: right;
+	}
+
+	.navbar-nav {
+	    float: right;
+	}
+}
+
+.callout {
+    padding: 15px 15px 15px 30px;
+    border-right: 5px solid #eee;
+    border-left: none;
+}
+
+/* collepsed sidebar */
+.sidebar-mini.sidebar-collapse .sidebar-menu>li>a>span {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+}
+
+.sidebar-menu li>a>.pull-right-container {
+    position: absolute;
+    left: 10px;
+    right: auto;
+}
+
+@media (min-width: 768px){
+	.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
+	    border-bottom-left-radius: 4px;
+	    border-bottom-right-radius: 0;
+	}
+
+	.sidebar-mini.sidebar-collapse .main-header .navbar {
+	    margin-right: 50px !important;
+	    margin-left: 0 !important;	
+	}
+
+	.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side, .sidebar-mini.sidebar-collapse .main-footer {
+	    margin-left: 0 !important;
+	    margin-right: 50px !important;
+	}
+}
+
+/* widjets page                       */
+/*************************************/
+.info-box-icon{
+	float: right;
+	border-top-right-radius: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 2px;
+}
+
+.info-box-content {
+    margin-right: 90px;
+}
+
+/* chat box */
+
+.direct-chat-img{
+	float: right;
+}
+
+.direct-chat-text{
+	margin: 5px 50px 0 0;
+}
+
+/*.direct-chat-text:after, .direct-chat-text:before{
+	left: 100% !important;
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}*/
+
+.direct-chat-text:after, .direct-chat-text:before {
+    right: auto;
+    left: 100%;
+    border-right-color: transparent;
+    border-left-color: #d2d6de;
+}
+
+.direct-chat-text:after {
+    border-width: 6px;
+    margin-top: -6px;
+}
+
+.direct-chat-text:before {
+    border-width: 5px;
+    margin-top: -5px;
+}
+
+.right .direct-chat-img{
+	float: left;
+}
+
+.right .direct-chat-text{
+	margin: 5px 0 0 50px;
+}
+
+.right .direct-chat-text:after, .right .direct-chat-text:before {
+    left: auto;
+    right: 100%;
+    border-right-color: inherit !important;
+    border-left-color: transparent !important;
+}
+
+.right .direct-chat-text:before {
+    border-width: 6px;
+    margin-top: -6px;
+}
+
+.right .direct-chat-text:after {
+    border-width: 5px;
+    margin-top: -5px;
+}
+
+/* social widget */
+.widget-user .box-footer .col-sm-4{
+	float: right;
+}
+
+.box .border-right {
+    border-left: 1px solid #f4f4f4;
+}
+
+.box-footer .nav{
+	padding-right: 0;
+}
+
+.widget-user-2 .widget-user-image>img {
+    float: right;
+}
+
+.widget-user-2 .widget-user-username, .widget-user-2 .widget-user-desc {
+    margin-right: 75px;
+    margin-left: 0;
+}
+
+.user-block img {
+    float: right;
+}
+
+.user-block .username, .user-block .description, .user-block .comment {
+    margin-right: 50px;
+    margin-left: 0;
+}
+
+.attachment-block .attachment-img {
+    float: right;
+}
+
+.attachment-block .attachment-pushed {
+    margin-right: 110px;
+    margin-left: 0;
+}
+
+.img-sm, .img-md, .img-lg, .box-comments .box-comment img, .user-block.user-block-sm img {
+    float: right;
+}
+
+.box-comments .comment-text {
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.img-sm+.img-push {
+    margin-right: 40px;
+    margin-left: 0;
+}
