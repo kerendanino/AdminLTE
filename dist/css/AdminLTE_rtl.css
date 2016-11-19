@@ -180,6 +180,30 @@
     right: auto;
 }
 
+.sidebar-menu > li .label,
+.sidebar-menu > li .badge {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.sidebar-menu li.header {
+  padding: 10px 15px 10px 25px;
+}
+
+.sidebar-menu .treeview-menu .treeview-menu {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.sidebar-menu .treeview-menu > li > a {
+  padding: 5px 15px 5px 5px;
+}
+
+.sidebar-menu li > a > .pull-right-container {
+  left: 10px;
+  right: auto;
+}
+
 @media (min-width: 768px){
 	.sidebar-mini.sidebar-collapse .sidebar-menu>li>.treeview-menu {
 	    border-bottom-left-radius: 4px;
@@ -191,10 +215,17 @@
 	    margin-left: 0 !important;	
 	}
 
-	.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side, .sidebar-mini.sidebar-collapse .main-footer {
+	.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side,
+    .sidebar-mini.sidebar-collapse .main-footer {
 	    margin-left: 0 !important;
 	    margin-right: 50px !important;
 	}
+
+    .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > .pull-right-container {
+        float: left;
+        right: 200px!important;
+        left: auto;
+      }
 }
 
 /* widjets page                       */
@@ -324,4 +355,29 @@
 .img-sm+.img-push {
     margin-right: 40px;
     margin-left: 0;
+}
+
+/* Charts pages */
+/***********************************************/
+.box-header>.fa, .box-header>.glyphicon, .box-header>.ion {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    float: right;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
 }
